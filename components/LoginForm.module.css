@@ -1,0 +1,47 @@
+/* components/LoginForm.module.css */
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.formGroup {
+    margin-bottom: 10px;
+}
+
+.label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.button:hover {
+    background-color: #005bb5;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
