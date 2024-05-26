@@ -1,4 +1,5 @@
 // components/Popup.js
+
 "use client";
 
 import React from 'react';
@@ -10,7 +11,9 @@ const Popup = ({ show, onClose, children }) => {
   return (
     <div className={styles.overlay}>
       <div className={styles.popup}>
-        <button className={styles.closeButton} onClick={onClose}>&times;</button>
+        <button className={styles.closeButton} onClick={onClose}>
+          &times;
+        </button>
         {children}
       </div>
     </div>

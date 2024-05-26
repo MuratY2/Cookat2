@@ -14,7 +14,7 @@ function RecipeDetailPage() {
         const fetchRecipe = async () => {
             if (params.id) {
                 try {
-                    const response = await fetch(`https://my-json-server.typicode.com/MuratY2/main/recipes/${params.id}`);
+                    const response = await fetch(`https://66452cfcb8925626f89138a2.mockapi.io/recipes/${params.id}`);
                     if (!response.ok) throw new Error('Failed to fetch');
                     const data = await response.json();
                     setRecipe(data);

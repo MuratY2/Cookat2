@@ -1,11 +1,25 @@
 // components/SearchBar.js
-function SearchBar() {
-    return (
-      <div className="search-container">
-        <input type="search" placeholder="Search recipes..." />
-      </div>
-    );
-  }
-  
-  export default SearchBar;
-  
+
+"use client";
+
+import React from 'react';
+import styles from './SearchBar.module.css';
+
+const SearchBar = ({ onSearch }) => {
+  const handleChange = (e) => {
+    onSearch(e.target.value);
+  };
+
+  return (
+    <div className={styles.searchBar}>
+      <input
+        type="text"
+        onChange={handleChange}
+        placeholder="Search recipes..."
+        className={styles.searchInput}
+      />
+    </div>
+  );
+};
+
+export default SearchBar;

@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Cookat
 
-## Getting Started
+Cookat is a web application designed for users to upload, search, view, and delete recipes. It is built using ReactJS and Next.js with a focus on providing a user-friendly interface for managing recipes.
 
-First, run the development server:
+## Project Description
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Cookat allows users to:
+- Upload new recipes with detailed information.
+- Search for recipes based on recipe names.
+- View detailed information about each recipe.
+- Delete recipes they have uploaded.
+- Sign up and log in to manage their recipes.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Usage Scenarios
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Scenario 1: Viewing Recipes
+1. Navigate to the home page.
+2. Use the search bar to find recipes by name or ingredient.
+3. Click on a recipe card to view detailed information about the recipe.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Scenario 2: Uploading a Recipe
+1. Log in to your account.
+2. Click on the "Upload Recipe" link in the navigation bar.
+3. Fill in the recipe details in the form and submit.
+4. The new recipe appears on the home page and can be viewed in detail.
 
-## Learn More
+### Scenario 3: Deleting a Recipe
+1. Log in to your account.
+2. Navigate to a recipe you have uploaded.
+3. Click the "Delete" button to remove the recipe.
 
-To learn more about Next.js, take a look at the following resources:
+### Screenshots
+![Home Page](public/screenshots/home_page.png)
+![Recipe Detail](screenshots/recipe_detail.png)
+![Upload Recipe](screenshots/upload_recipe.png)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Data Management
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+1. MockAPI.io is used for users,sessions and recipes:
+### Users: https://6644200a6c6a656587094591.mockapi.io/users
+### Sessions: https://6644200a6c6a656587094591.mockapi.io/sessions
+### Recipes: https://66452cfcb8925626f89138a2.mockapi.io/recipes
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Responsibilities of Each Project Member
+- I work alone so I did everything.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## How to run
+

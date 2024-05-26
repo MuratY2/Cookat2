@@ -1,0 +1,37 @@
+/* components/RecipeCard.module.css */
+
+.recipeCard {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background-color: #effaf6;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.recipeCard:hover {
+  transform: translateY(-5px);
+}
+
+.recipeImage {
+  width: 250px;
+  height: 250px;
+  margin-right: 20px;
+  border-radius: 4px;
+}
+
+.recipeInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.recipeInfo a {
+  text-decoration: none; 
+  color: inherit; 
+}
+
+.recipeInfo a:hover {
+  text-decoration: underline;
+}

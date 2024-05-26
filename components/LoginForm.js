@@ -1,11 +1,12 @@
 // components/LoginForm.js
+
 "use client";
 
 import React, { useState } from 'react';
 import styles from './LoginForm.module.css';
-import { signupUser } from '../utils/auth'; 
+import { signupUser, loginUser } from '../utils/auth';
 
-const LoginForm = ({ formType }) => {
+const LoginForm = ({ formType, onLoginSuccess, onClose }) => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState(null);
@@ -16,9 +17,12 @@ const LoginForm = ({ formType }) => {
       if (formType === 'signup') {
         await signupUser(username, password);
         alert('Signup successful');
-      } else {
-        // Handle login
+      } else if (formType === 'login') {
+        const user = await loginUser(username, password);
+        onLoginSuccess(user);  
+        alert('Login successful');
       }
+      onClose();  
     } catch (err) {
       setError(err.message);
     }
