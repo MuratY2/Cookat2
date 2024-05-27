@@ -31,8 +31,8 @@ Cookat allows users to:
 
 ### Screenshots
 ![Home Page](public/screenshots/home_page.png)
-![Recipe Detail](screenshots/recipe_detail.png)
-![Upload Recipe](screenshots/upload_recipe.png)
+![Recipe Detail](public/screenshots/recipe_detail.png)
+![Upload Recipe](public/screenshots/upload_recipe.png)
 
 ## Data Management
 
@@ -47,4 +47,10 @@ Cookat allows users to:
 
 
 ## How to run
+1. Download the project zip file from the repository.
+2. Extract the zip file to a directory of your choice.
+3. Navigate to the project directory in command prompt
+4. npm install
+5. npm run dev
+6. Navigate to given link (http://localhost:3000)
 
