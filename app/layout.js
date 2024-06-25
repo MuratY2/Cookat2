@@ -9,7 +9,6 @@ import Header from '../components/Header';
 import Popup from '../components/Popup';
 import LoginForm from '../components/LoginForm';
 import { getLoggedInUser, logoutUser } from '../utils/auth';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 export default function Layout({ children }) {
